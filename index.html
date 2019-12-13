@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="newheader">
+  <h2>Difficulty Level:-</h2><pre>      </pre>
+  <form class="getmode" action="index.html" method="get">
+    <input onclick="setMode(this.form)" checked onclick= 0 type="radio" value="Hard" name="rad">Hard</input>
+    <pre>    </pre>
+    <input onclick="setMode(this.form)" onclick= 0 type="radio" value="Easy" name="rad">Easy</input>
+  </form>
+
+  </div>
+  <h3>Your are : X</h3>
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+	<div class="endgame">
+		<div class="text"></div>
+    <button onClick="startGame()">Play Again</button>
+	</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
